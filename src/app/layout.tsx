@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from 'next/font/google'
- 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
+import { Kanit } from "next/font/google";
+
+const kanit = Kanit({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Filhas da Terra",
@@ -15,12 +15,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={kanit.className}>
       <body>{children}</body>
     </html>
-  )
+  );
 }
-

@@ -19,14 +19,55 @@ export default function Home() {
         </nav>
       </header>
       <div className="flex flex-1 justify-center items-center">
-        <Image
-          className="rounded-xl"
-          src="/Logo.jpg"
-          alt="Logo"
-          width={400}
-          height={400}
-        />
+        <div className="p-1 rounded-full bg-sky-600 relative mt-20 mb-28">
+          <Image
+            className="rounded-full"
+            src="/Logo.jpg"
+            alt="Logo"
+            width={600}
+            height={600}
+          />
+          <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-7xl font-bold">
+            Filhas da
+            <span className="text-green-700"> Terra</span>
+          </h2>
+        </div>
       </div>
-    </main>
+      <div className="flex flex-1 justify-center items-center mt-3 border-t-[2px] border-sky-600">
+        <div className="flex flex-row gap-16 my-16 items-center">
+          <div className="flex flex-col">
+            <h3 className="text-5xl font-extrabold text-sky-600 text-center">
+              O Nosso <br /> Impacto
+            </h3>
+            <p className="text-xl text-sky-800 max-w-96 text-center">
+              Realizamos{" "}
+              <span className="font-bold">
+                pesquisas, oficinas, palestras e rodas de conversa
+              </span>{" "}
+              acerca de temáticas como:{" "}
+              <span className="font-bold">
+                meio ambiente, soberania alimentar, hortas comunitárias urbanas
+              </span>{" "}
+              sem uso de agrotóxicos,{" "}
+              <span className="font-bold">
+                cultura negra, indígena e quilombola
+              </span>
+              , saúde, reutilização de materiais recicláveis, autocuidado,{" "}
+              <span className="font-bold">
+                alimentação saudável, arte, cultura e esporte
+              </span>
+              , sempre respeitando a diversidade e pluralidade coletiva e
+              individual.
+            </p>
+          </div>
+          <Image
+            className="rounded-2xl"
+            src="/foto.jpg"
+            alt="Logo"
+            width={600}
+            height={600}
+          />
+        </div>
+      </div>    </main>
   );
 }
